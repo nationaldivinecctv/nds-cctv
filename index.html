@@ -237,7 +237,7 @@
       border-left: 5px solid #25d366;
     }
 
-    /* 4. GALLERY */
+    /* 4. 3-IMAGE GALLERY */
     .gallery-section {
       background-color: #ffffff;
       border-top: 1px solid #e2e8f0;
@@ -245,17 +245,57 @@
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
       margin-top: 22px;
+    }
+
+    .photo {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
     }
 
     .photo img {
       width: 100%;
-      height: 230px;
+      height: 220px;
       object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .photo img:hover {
+      transform: scale(1.04);
+    }
+
+    .photo-caption {
+      padding: 18px;
+    }
+
+    .photo-tag {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #0284c7;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .photo-caption h3 {
+      font-size: 1.12rem;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .photo-caption p {
+      font-size: 0.94rem;
+      color: #475569;
+      line-height: 1.55;
     }
 
     /* 5. FOOTER */
@@ -282,6 +322,12 @@
     }
 
     /* Mobile Responsive */
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+
     @media (max-width: 768px) {
       .site-header {
         flex-wrap: wrap;
@@ -406,19 +452,45 @@
       </div>
     </section>
 
-    <!-- GALLERY -->
+    <!-- 3-IMAGE GALLERY -->
     <section class="section gallery-section">
       <div class="wrap">
         <span class="section-tag">Recent Installations</span>
         <h2>Gallery</h2>
         <div class="gallery">
-          <div class="photo"><img src="image1.jpg" alt="CCTV Camera Installation 1" /></div>
-          <div class="photo"><img src="image2.jpg" alt="CCTV Camera Installation 2" /></div>
-          <div class="photo"><img src="image3.jpg" alt="CCTV Camera Installation 3" /></div>
-          <div class="photo"><img src="image4.jpg" alt="CCTV Camera Installation 4" /></div>
+          <!-- Image 1 -->
+          <div class="photo">
+            <img src="image1.jpg" alt="CCTV & Video Monitoring" />
+            <div class="photo-caption">
+              <span class="photo-tag">01 / SURVEILLANCE</span>
+              <h3>CCTV &amp; Video Monitoring</h3>
+              <p>Camera systems to support visibility across business premises.</p>
+            </div>
+          </div>
+
+          <!-- Image 2 -->
+          <div class="photo">
+            <img src="image2.jpg" alt="Engineering & Support" />
+            <div class="photo-caption">
+              <span class="photo-tag">02 / TECHNICAL SUPPORT</span>
+              <h3>Engineering &amp; Support</h3>
+              <p>Support for troubleshooting, maintenance and future upgrades.</p>
+            </div>
+          </div>
+
+          <!-- Image 3 -->
+          <div class="photo">
+            <img src="image3.jpg" alt="Project Team Collaboration" />
+            <div class="photo-caption">
+              <span class="photo-tag">03 / TEAMWORK</span>
+              <h3>Project Team Collaboration</h3>
+              <p>Coordination across project planning, execution and support.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+  </main>
 
   <!-- FOOTER -->
   <footer>
