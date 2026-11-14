@@ -1,0 +1,4 @@
+name = "nds-cctv"
+compatibility_date = "2026-11-14"
+[assets]
+directory = "./"
