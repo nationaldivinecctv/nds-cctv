@@ -36,16 +36,15 @@
     .brand-left {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       text-decoration: none;
       color: #0f172a;
     }
 
     .brand-left img {
-      height: 55px; /* Adjust height if you want the NDS logo larger or smaller */
+      height: 50px;
       width: auto;
       display: block;
-      object-fit: contain;
     }
 
     .brand-name {
@@ -82,7 +81,7 @@
       color: #0284c7;
     }
 
-    /* Top-Right CP Plus Partner Logo */
+    /* Top-Right CP Plus Partner Badge/Logo */
     .partner-right {
       display: flex;
       align-items: center;
@@ -100,7 +99,7 @@
     .hero-banner {
       width: 100%;
       min-height: 480px;
-      /* Replace 'banner.jpg' with your banner image filename from GitHub */
+      /* Replace 'banner.jpg' with any banner image filename from your GitHub repo */
       background: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.78)),
                   url('banner.jpg') center/cover no-repeat;
       background-color: #0f172a;
@@ -223,12 +222,67 @@
 </head>
 <body>
 
-  <!-- HEADER: Left = NDS Logo, Center = Menu, Right = CP Plus Logo -->
+  <!-- HEADER: Left = NDS Brand, Center = Menu, Right = CP Plus Logo -->
   <header class="site-header">
-    <!-- Top Left: NDS Logo -->
+    <!-- Top Left: Your Company Brand / Logo -->
     <a href="index.html" class="brand-left">
-      <!-- Make sure 'nds-logo.png' matches the exact NDS logo filename in your GitHub repo -->
-      <img src="nds-logo.png" alt="NDS Logo" />
+      <!-- If you have an NDS logo file, uncomment the line below and put its filename: -->
+      <!-- <img src="nds-logo.png" alt="NDS Logo" /> -->
       <div>
         <span class="brand-name">NDS</span>
-        <span class="brand-sub">CCTV &
+        <span class="brand-sub">CCTV &amp; Security Solutions</span>
+      </div>
+    </a>
+
+    <!-- Center: Navigation Links -->
+    <nav class="links">
+      <a href="index.html" class="active">About Us</a>
+      <a href="service.html">Our Services</a>
+      <a href="Contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Top Right: CP Plus Logo -->
+    <div class="partner-right">
+      <img src="CP-Plus-Logo-web.png" alt="CP Plus Authorised Partner" />
+    </div>
+  </header>
+
+  <!-- BIG HERO BANNER -->
+  <section class="hero-banner">
+    <div class="hero-wrap">
+      <div class="eyebrow">NDS • Kolkata &amp; Howrah</div>
+      <h1>CP Plus Authorised CCTV Camera Installation in Kolkata &amp; Howrah</h1>
+      <p>Protecting Kolkata, Howrah &amp; Beyond Since 2002 with reliable residential, commercial, and industrial surveillance solutions.</p>
+      <a href="https://wa.me/917044009388" class="hero-btn">Chat on WhatsApp: 7044009388</a>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="section wrap">
+      <h2>Our Story</h2>
+      <p><strong>Protecting Kolkata, Howrah &amp; Beyond Since 2002.</strong></p>
+      <p>At NDS, we specialize in end-to-end CP Plus CCTV camera installation, DVR/NVR configuration, and ongoing maintenance across Kolkata and Howrah.</p>
+    </section>
+
+    <section class="section wrap">
+      <h2>Our Work Gallery</h2>
+      <div class="gallery">
+        <!-- Replace the src names below with the exact image filenames visible in your left sidebar -->
+        <div class="photo"><img src="image1.jpg" alt="CCTV Installation 1" /></div>
+        <div class="photo"><img src="image2.jpg" alt="CCTV Installation 2" /></div>
+        <div class="photo"><img src="image3.jpg" alt="CCTV Installation 3" /></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="foot">
+      <span>© NDS | CP PLUS CCTV Camera Installation</span>
+      <span>Kolkata &amp; Howrah • WhatsApp: <a href="https://wa.me/917044009388">7044009388</a></span>
+    </div>
+  </footer>
+
+</body>
+</html>
