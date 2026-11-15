@@ -1,24 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | CP Plus Authorised CCTV Camera Installation in Kolkata &amp; Howrah | NDS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<!-- saved from url=(0132)file:///C:/Users/USER/AppData/Local/Temp/3a92b0a0-8a5c-4ae4-baf2-b13ed57fbda7_NDS_3_page_editable_website%20(1).zip.da7/contact.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="style.css"><title>Contact Us | NDS</title></head><body><header><div class="wrap nav">
-<a href="index.html"><img class="logo" src="assets/nds-logo.jpeg" alt="NDS CP PLUS CCTV installation logo"></a>
-<nav class="links"><a href="index.html">About Us</a> &nbsp; <a href="service.html">Our Services</a> &nbsp; <a href="Contact.html">Contact Us</a>
-</div></header>
-<section class="hero"><div class="wrap"><div class="eyebrow">Get in touch</div><h1 contenteditable="true">Contact Us</h1>
-<p contenteditable="true"><b data-path-to-node="5,0" data-index-in-node="0">Protecting Homes &amp; Businesses Since 2002.</b> Welcome to <b data-path-to-node="5,0" data-index-in-node="53">NDS</b>—your trusted, authorised <b data-path-to-node="5,0" data-index-in-node="82">CP Plus CCTV camera dealer &amp; installation partner</b> in Kolkata, Howrah, and across West Bengal.</p></div></section>
-<main><section class="section wrap"><div class="contact-grid">
-<div><h2 contenteditable="true">NDS Contact Details</h2>
-<div class="edit" contenteditable="true">
-<p><strong>Phone / WhatsApp:</strong> 7044009388</p>
-<p><strong>Office:</strong> 799/2, Panchanantala, Bahiragath Colony, Jawpur, Newtown South Dumdum, Kolkata – 700074</p>
-<p><strong>Service area:</strong> Kolkata &amp; Howrah, West Bengal</p>
-<p><strong>Email:</strong> nationaldivineservice@gmail.com</p>
-</div></div>
-<div><h2>Send an Enquiry</h2>
-<p class="hint">This sample form opens the visitor's email app. Replace YOUR_EMAIL_HERE with your business email before publishing. For a form that stores submissions online, connect a form service or website backend.</p>
-<form action="mailto:YOUR_EMAIL_HERE" method="post" enctype="text/plain">
-<label for="name">Your name</label><input id="name" name="Name" required="">
-<label for="phone">Phone number</label><input id="phone" name="Phone" type="tel" required="">
-<label for="message">How can we help?</label><textarea id="message" name="Message" required=""></textarea>
-<button class="btn" type="submit">Send Enquiry</button>
-</form></div></div></section></main><footer><div class="wrap foot"><span>© NDS | CP PLUS CCTV Camera Installation</span><span>Kolkata &amp; Howrah • WhatsApp: <a href="https://wa.me/917044009388">7044009388</a></span></div></footer></body></html>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #1e293b;
+      background-color: #f8fafc;
+      line-height: 1.65;
+    }
+
+    /* 1. TOP HEADER */
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 6%;
+      background-color: #ffffff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      gap: 20px;
+    }
+
+    .brand-left {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .brand-left img {
+      height: 70px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .links {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: #0f172a;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    .links a:hover,
+    .links a.active {
+      color: #0284c7;
+    }
+
+    .partner-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .partner-right img {
+      height: 46px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    /* 2. BIG HERO BANNER */
+    .hero-banner {
+      width: 100%;
+      min-height: 380px;
+      background: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.78)),
+                  url('banner.jpg') center/cover no-repeat;
+      background-color: #0f172a;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      padding: 55px 6%;
+    }
+
+    .hero-wrap {
+      max-width: 820px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: rgba(2, 132, 199, 0.25);
+      border: 1px solid #38bdf8;
+      color: #7dd3fc;
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+
+    .hero-banner h1 {
+      font-size: 2.65rem;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      color: #ffffff;
+    }
+
+    .hero-banner p {
+      font-size: 1.15rem;
+      color: #e2e8f0;
+      margin-bottom: 28px;
+    }
+
+    .hero-btn {
+      display: inline-block;
+      background-color: #25d366;
+      color: #ffffff;
+      padding: 13px 26px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    /* 3. CONTACT SECTION */
+    .wrap {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 55px 6%;
+    }
+
+    .section-tag {
+      color: #0284c7;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .section h2 {
+      font-size: 1.95rem;
+      margin-bottom: 14px;
+      color: #0f172a;
+      line-height: 1.25;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 32px;
+      margin-top: 28px;
+    }
+
+    .info-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .info-card {
+      background: #ffffff;
+      padding: 22px 24px;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+      border-left: 4px solid #0284c7;
+    }
+
+    .info-card h3 {
+      font-size: 1.15rem;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+
+    .info-card p {
+      font-size: 0.96rem;
+      color: #334155;
+      margin-bottom: 6px;
+    }
+
+    .info-card a {
+      color: #0284c7;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.05rem;
+    }
+
+    /* Quick Inquiry Form Card */
+    .form-card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(15, 23, 42, 0.07);
+      border-top: 4px solid #0f172a;
+    }
+
+    .form-card h3 {
+      font-size: 1.35rem;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .form-card > p {
+      font-size: 0.94rem;
+      color: #475569;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 0.96rem;
+      color: #1e293b;
+      background-color: #f8fafc;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #0284c7;
+      background-color: #ffffff;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background-color: #25d366;
+      color: #ffffff;
+      padding: 14px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .submit-btn:hover {
+      opacity: 0.92;
+    }
+
+    /* 4. FOOTER */
+    footer {
+      background-color: #0f172a;
+      color: #cbd5e1;
+      padding: 24px 6%;
+    }
+
+    .foot {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.95rem;
+    }
+
+    .foot a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 820px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .site-header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .brand-left img {
+        height: 54px;
+      }
+      .partner-right img {
+        height: 36px;
+      }
+      .links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding-top: 10px;
+        border-top: 1px solid #e2e8f0;
+      }
+      .hero-banner h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a href="index.html" class="brand-left">
+      <img src="nds-logo.jpeg" alt="NDS Authorised CCTV Camera Installation in Kolkata & Howrah" />
+    </a>
+
+    <nav class="links">
+      <a href="index.html">About Us</a>
+      <a href="service.html">Our Services</a>
+      <a href="Contact.html" class="active">Contact Us</a>
+    </nav>
+
+    <div class="partner-right">
+      <img src="CP-Plus-Logo-web.png" alt="CP Plus Authorised Partner" />
+    </div>
+  </header>
+
+  <!-- BIG HERO BANNER -->
+  <section class="hero-banner">
+    <div class="hero-wrap">
+      <div class="eyebrow">NDS • Kolkata &amp; Howrah • Rapid Support</div>
+      <h1>Contact NDS for Free Site Survey &amp; CCTV Quote</h1>
+      <p>Speak directly with our CP Plus certified installation and AMC support team across Kolkata, Howrah &amp; West Bengal.</p>
+      <a href="https://wa.me/917044009388" class="hero-btn">Chat on WhatsApp: 7044009388</a>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="section wrap">
+      <span class="section-tag">Get In Touch</span>
+      <h2>Book an Installation, Repair, or AMC Visit</h2>
+
+      <div class="contact-grid">
+        <!-- Left Column: Direct Contact Details & Hubs -->
+        <div class="info-cards">
+          <div class="info-card">
+            <h3>Direct Phone &amp; WhatsApp</h3>
+            <p>Instant support for new camera quotes, urgent repairs, and site surveys:</p>
+            <p><a href="tel:+917044009388">+91 70440 09388</a></p>
+            <p><a href="https://wa.me/917044009388">WhatsApp Chat: 7044009388</a></p>
+          </div>
+
+          <div class="info-card">
+            <h3>Kolkata Hub (Dumdum)</h3>
+            <p>799/2 Sahid Hemanta Kr Bose Sarani, Dumdum, Kolkata, West Bengal</p>
+            <p>Rapid dispatch across North &amp; South Kolkata, Salt Lake, Newtown, and North 24 Parganas.</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Howrah Office (Bally)</h3>
+            <p>21/3, Dr. P.N. Ghosh Road, Bally, Howrah, West Bengal</p>
+            <p>Dedicated on-site support across Howrah City, Bally, Liluah, Belur, Dankuni, and Hooghly belt.</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Working Hours</h3>
+            <p><strong>Monday – Saturday:</strong> 9:30 AM – 8:00 PM</p>
+            <p><strong>Sunday:</strong> Emergency &amp; Scheduled Project Support</p>
+          </div>
+        </div>
+
+        <!-- Right Column: Quick WhatsApp Inquiry Form -->
+        <div class="form-card">
+          <h3>Request a Free Callback / Quote</h3>
+          <p>Fill in your requirement below and send it straight to our technical team on WhatsApp.</p>
+
+          <form onsubmit="sendToWhatsApp(event)">
+            <div class="form-group">
+              <label for="custName">Your Name *</label>
+              <input type="text" id="custName" placeholder="Enter your full name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="custPhone">Mobile Number *</label>
+              <input type="tel" id="custPhone" placeholder="Enter your 10-digit mobile number" required />
+            </div>
+
+            <div class="form-group">
+              <label for="custArea">Area / Location (Kolkata / Howrah) *</label>
+              <input type="text" id="custArea" placeholder="e.g. Dumdum, Bally, Salt Lake, Howrah" required />
+            </div>
+
+            <div class="form-group">
+              <label for="custService">Service Required</label>
+              <select id="custService">
+                <option value="New CP Plus CCTV Installation">New CP Plus CCTV Installation</option>
+                <option value="IP Camera & NVR Setup">IP Camera &amp; NVR Setup</option>
+                <option value="CCTV Repair / Troubleshooting">CCTV Repair / Troubleshooting</option>
+                <option value="Annual Maintenance Contract (AMC)">Annual Maintenance Contract (AMC)</option>
+                <option value="Biometric / Video Door Phone">Biometric / Video Door Phone</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="custMsg">Requirement Details (Optional)</label>
+              <textarea id="custMsg" rows="3" placeholder="e.g. Need 4 outdoor cameras for home or 8 IP cameras for office"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Inquiry on WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="foot">
+      <span>© NDS | CP PLUS CCTV Camera Installation</span>
+      <span>Kolkata &amp; Howrah • WhatsApp: <a href="https://wa.me/917044009388">7044009388</a></span>
+    </div>
+  </footer>
+
+  <!-- Script to forward form directly to your WhatsApp -->
+  <script>
+    function sendToWhatsApp(e) {
+      e.preventDefault();
+      const name = document.getElementById('custName').value;
+      const phone = document.getElementById('custPhone').value;
+      const area = document.getElementById('custArea').value;
+      const service = document.getElementById('custService').value;
+      const msg = document.getElementById('custMsg').value;
+
+      const text = `Hello NDS CCTV,%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Location:* ${encodeURIComponent(area)}%0A*Service:* ${encodeURIComponent(service)}%0A*Details:* ${encodeURIComponent(msg)}`;
+      window.open(`https://wa.me/917044009388?text=${text}`, '_blank');
+    }
+  </script>
+
+</body>
+</html>
