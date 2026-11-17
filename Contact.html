@@ -8,19 +8,80 @@
   <link rel="stylesheet" href="style.css" />
 
   <style>
-    /* Contact Page Hero Banner with contact-banner.jpg */
-    .hero-banner.contact-banner {
-      width: 100%;
-      min-height: 380px;
-      background: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.78)),
-                  url('contact-banner.jpg') center/cover no-repeat !important;
-      background-color: #0f172a;
-      color: #ffffff;
+   /* Responsive Header Fix for Mobile & Desktop */
+    .nds-site-header {
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .nds-header-bar {
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .nds-logo-left img {
+      height: 46px;
+      width: auto;
+      display: block;
+    }
+    .nds-logo-right img {
+      height: 40px;
+      width: auto;
+      display: block;
+    }
+    .nds-main-menu {
       display: flex;
       align-items: center;
-      padding: 55px 6%;
+      justify-content: center;
+      gap: 24px;
+    }
+    .nds-main-menu a {
+      color: #0f172a;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .nds-main-menu a.active {
+      color: #0284c7;
+      font-weight: 700;
     }
 
+    @media (max-width: 768px) {
+      .nds-header-bar {
+        flex-wrap: wrap;
+        padding: 10px 14px;
+        gap: 8px;
+      }
+      .nds-logo-left {
+        order: 1;
+      }
+      .nds-logo-left img {
+        height: 38px;
+      }
+      .nds-logo-right {
+        order: 2;
+      }
+      .nds-logo-right img {
+        height: 34px;
+      }
+      .nds-main-menu {
+        order: 3;
+        width: 100%;
+        border-top: 1px solid #f1f5f9;
+        padding-top: 8px;
+        gap: 20px;
+      }
+      .nds-main-menu a {
+        font-size: 14px;
+      }
+    }
     .hero-wrap {
       max-width: 820px;
     }
@@ -296,19 +357,21 @@
 </head>
 <body>
 
-  <!-- TOP NAVIGATION HEADER -->
-  <header>
-    <div class="container nav" style="max-width:1150px;margin:0 auto;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;">
-      <a href="index.html" class="brand" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
-        <img src="nds-logo.jpeg" alt="NDS CCTV Logo" style="height:46px;width:auto;" />
+<!-- TOP NAVIGATION HEADER -->
+  <header class="nds-site-header">
+    <div class="nds-header-bar">
+      <a href="index.html" class="nds-logo-left">
+        <img src="nds-logo.jpeg" alt="NDS CCTV Logo" />
       </a>
-      <nav class="navlinks" style="display:flex;gap:22px;align-items:center;">
-        <a href="index.html" style="color:#0f172a;font-weight:600;text-decoration:none;">About Us</a>
-        <a href="service.html" style="color:#0f172a;font-weight:600;text-decoration:none;">Our Services</a>
-        <a href="Contact.html" style="color:#0284c7;font-weight:700;text-decoration:none;">Contact Us</a>
+
+      <nav class="nds-main-menu">
+        <a href="index.html">About Us</a>
+        <a href="service.html">Our Services</a>
+        <a href="Contact.html" class="active">Contact Us</a>
       </nav>
-      <div class="partner-right">
-        <img src="CP-Plus-Logo-web.png" alt="CP Plus Authorised Partner" style="height:42px;width:auto;" />
+
+      <div class="nds-logo-right">
+        <img src="CP-Plus-Logo-web.png" alt="CP Plus Authorised Partner" />
       </div>
     </div>
   </header>
