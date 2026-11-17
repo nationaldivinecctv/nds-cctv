@@ -16,3 +16,24 @@ header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0
 footer{background:#06132f;color:#dce7f5;padding:36px 0 18px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:30px}.footer-logo{height:48px;width:auto;object-fit:contain;margin-bottom:12px}.footer-grid h3{color:#fff;margin:0 0 10px}.footer-grid p,.footer-grid a{color:#c4d0e4}.footer-bottom{border-top:1px solid rgba(255,255,255,.16);margin-top:25px;padding-top:15px;font-size:.86rem;color:#aebbd0;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 @media(max-width:850px){.nav{align-items:flex-start}.navlinks{gap:14px;flex-wrap:wrap}.nav-cta{display:none}.intro-grid,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:580px){.topbar .container{font-size:.78rem}.nav{display:block}.brand{margin-bottom:10px}.brand-nds{height:48px}.brand-cp{height:36px}.navlinks{gap:18px;font-size:.88rem}.hero{padding:56px 0}.work-types .container{grid-template-columns:1fr;gap:12px}.section{padding:46px 0}.cards,.gallery,.coverage,.footer-grid{grid-template-columns:1fr}.intro-photo img{height:300px}.gallery img{height:220px}}
+/* Highlighted Green Call & WhatsApp Buttons */
+.hero-banner a, .page-hero a, .contact-card a[href^="tel:"], a[href^="tel:"], .nds-green-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #22c55e, #16a34a) !important;
+  color: #ffffff !important;
+  font-size: 14.5px;
+  font-weight: 700;
+  padding: 11px 24px;
+  border-radius: 50px;
+  text-decoration: none !important;
+  box-shadow: 0 0 16px rgba(34, 197, 94, 0.55);
+  margin-top: 10px;
+  letter-spacing: 0.3px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-banner a:hover, .page-hero a:hover, .contact-card a[href^="tel:"]:hover, a[href^="tel:"]:hover, .nds-green-btn:hover {
+  background: linear-gradient(135deg, #16a34a, #15803d) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 0 22px rgba(34, 197, 94, 0.75);
+}
