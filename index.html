@@ -488,7 +488,6 @@
       overflow-x: auto;
       text-align: center;
     }
-    /* Second Line: Address & Call Button aligned on the Right */
     .nds-right-row {
       display: flex;
       flex-wrap: wrap;
@@ -507,4 +506,67 @@
       display: inline-block;
       background: linear-gradient(135deg, #fbbf24, #f59e0b);
       color: #0B1320;
-      font-size: 1
+      font-size: 14px;
+      font-weight: 800;
+      padding: 9px 22px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 0 16px rgba(251, 191, 36, 0.55);
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+    }
+    .nds-copyright {
+      border-top: 1px solid #1e293b;
+      margin: 0;
+      padding-top: 12px;
+      font-size: 11px;
+      color: #64748b;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .nds-right-row {
+        justify-content: center;
+      }
+      .nds-address {
+        text-align: center;
+      }
+      .nds-call-btn {
+        position: fixed;
+        bottom: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 360px;
+        text-align: center;
+        z-index: 9999;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 15px rgba(251, 191, 36, 0.6);
+      }
+    }
+    @media (min-width: 769px) {
+      .nds-footer {
+        padding-bottom: 18px;
+      }
+    }
+  </style>
+
+  <footer class="nds-footer">
+    <div class="nds-container">
+      <p class="nds-keywords">
+        cp plus cctv camera installation in kolkata | cctv camera installation in kolkata | ip cctv camera installation in kolkata | security cctv surveillance installation | ip camera installation services in kolkata |
+      </p>
+      <div class="nds-right-row">
+        <p class="nds-address">
+          799/2 Sahid Hemanta Kr Bose Sarani, Dumdum, Kolkata 700074
+        </p>
+        <a href="tel:+917044009388" class="nds-call-btn">
+          📞 Call Now: 7044009388
+        </a>
+      </div>
+      <p class="nds-copyright">
+        © 2003 All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
