@@ -165,7 +165,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
       gap: 18px;
-      margin: 28px 0 40px;
+      margin: 28px 0 10px;
     }
 
     .stat-box {
@@ -190,10 +190,6 @@
     }
 
     /* Solutions Grid */
-    .solutions-block {
-      margin-top: 36px;
-    }
-
     .solutions-block > p {
       margin-bottom: 15px;
       color: #334155;
@@ -241,6 +237,7 @@
     .gallery-section {
       background-color: #ffffff;
       border-top: 1px solid #e2e8f0;
+      border-bottom: 1px solid #e2e8f0;
     }
 
     .gallery {
@@ -296,29 +293,6 @@
       font-size: 0.94rem;
       color: #475569;
       line-height: 1.55;
-    }
-
-    /* 5. FOOTER */
-    footer {
-      background-color: #0f172a;
-      color: #cbd5e1;
-      padding: 24px 6%;
-    }
-
-    .foot {
-      max-width: 1140px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
-      font-size: 0.95rem;
-    }
-
-    .foot a {
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: 600;
     }
 
     /* Mobile Responsive */
@@ -383,7 +357,7 @@
 
   <!-- MAIN CONTENT -->
   <main>
-    <!-- ABOUT US & SOLUTIONS -->
+    <!-- ABOUT US & STATS -->
     <section class="section wrap">
       <div class="about-intro">
         <span class="section-tag">Established 2002 • Registered Member of CCTV Community India</span>
@@ -412,8 +386,8 @@
           <span>Workforce Teams Across India</span>
         </div>
       </div>
+    </section>
 
-      
     <!-- 3-IMAGE GALLERY -->
     <section class="section gallery-section">
       <div class="wrap">
@@ -452,9 +426,9 @@
         </div>
       </div>
     </section>
-  </main>
-     
- <!-- Comprehensive Security & Surveillance Solutions -->
+
+    <!-- Comprehensive Security & Surveillance Solutions (Properly Aligned with About Us & Gallery) -->
+    <section class="section wrap">
       <div class="solutions-block">
         <h2>Comprehensive Security &amp; Surveillance Solutions</h2>
         <p>
@@ -492,116 +466,45 @@
         </div>
       </div>
     </section>
+  </main>
 
   <!-- FOOTER -->
-<style>
-  .nds-footer {
-    background-color: #0B1320;
-    color: #f8fafc;
-    padding: 20px 24px 76px 24px;
-    font-family: sans-serif;
-  }
-  .nds-container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .nds-keywords {
-    font-size: 11px;
-    color: #94a3b8;
-    margin: 0 0 14px 0;
-    white-space: nowrap;
-    overflow-x: auto;
-    text-align: center;
-  }
-  /* Second Line: Address & Call Button aligned on the Right */
-  .nds-right-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 16px;
-  }
-  .nds-address {
-    font-size: 13px;
-    color: #e2e8f0;
-    margin: 0;
-    text-align: right;
-  }
-  .nds-call-btn {
-    display: inline-block;
-    background: linear-gradient(135deg, #fbbf24, #f59e0b);
-    color: #0B1320;
-    font-size: 14px;
-    font-weight: 800;
-    padding: 9px 22px;
-    border-radius: 50px;
-    text-decoration: none;
-    box-shadow: 0 0 16px rgba(251, 191, 36, 0.55);
-    letter-spacing: 0.3px;
-    white-space: nowrap;
-  }
-  /* Third Line: Copyright in the Middle */
-  .nds-copyright {
-    border-top: 1px solid #1e293b;
-    margin: 0;
-    padding-top: 12px;
-    font-size: 11px;
-    color: #64748b;
-    text-align: center;
-  }
-
-  /* Mobile Adjustments */
-  @media (max-width: 768px) {
+  <style>
+    .nds-footer {
+      background-color: #0B1320;
+      color: #f8fafc;
+      padding: 20px 24px 76px 24px;
+      font-family: sans-serif;
+    }
+    .nds-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .nds-keywords {
+      font-size: 11px;
+      color: #94a3b8;
+      margin: 0 0 14px 0;
+      white-space: nowrap;
+      overflow-x: auto;
+      text-align: center;
+    }
+    /* Second Line: Address & Call Button aligned on the Right */
     .nds-right-row {
-      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
     }
     .nds-address {
-      text-align: center;
+      font-size: 13px;
+      color: #e2e8f0;
+      margin: 0;
+      text-align: right;
     }
     .nds-call-btn {
-      position: fixed;
-      bottom: 12px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 90%;
-      max-width: 360px;
-      text-align: center;
-      z-index: 9999;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 15px rgba(251, 191, 36, 0.6);
-    }
-  }
-
-  @media (min-width: 769px) {
-    .nds-footer {
-      padding-bottom: 18px;
-    }
-  }
-</style>
-
-<footer class="nds-footer">
-  <div class="nds-container">
-    
-    <!-- Line 1: Single-Line Keywords -->
-    <p class="nds-keywords">
-      cp plus cctv camera installation in kolkata | cctv camera installation in kolkata | ip cctv camera installation in kolkata | security cctv surveillance installation | ip camera installation services in kolkata |
-    </p>
-
-    <!-- Line 2: Address & Call Button on the Right -->
-    <div class="nds-leftt-row">
-      <p class="nds-address">
-        799/2 Sahid Hemanta Kr Bose Sarani, Dumdum, Kolkata 700074
-      </p>
-      <a href="tel:+917044009388" class="nds-call-btn">
-        📞 Call Now: 7044009388
-      </a>
-    </div>
-
-    <!-- Line 3: Copyright Centered in the Middle -->
-    <p class="nds-copyright">
-      © 2003 All Rights Reserved.
-    </p>
-
-  </div>
-</footer>
-
+      display: inline-block;
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      color: #0B1320;
+      font-size: 1
