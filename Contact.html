@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 
   <style>
-    /* Contact Page Specific Banner (contact-banner.jpg) */
+    /* Contact Page Hero Banner with contact-banner.jpg */
     .hero-banner.contact-banner {
       width: 100%;
       min-height: 380px;
@@ -52,9 +52,8 @@
       line-height: 1.65;
     }
 
-    /* High-Visibility Green Box for Clickable WhatsApp & Call Buttons */
-    .hero-btn,
-    .nds-whatsapp-box-btn {
+    /* Bright Green Clickable Box for Hero WhatsApp Button */
+    .hero-btn {
       display: inline-block !important;
       background: linear-gradient(135deg, #22c55e, #16a34a) !important;
       color: #ffffff !important;
@@ -69,14 +68,13 @@
       transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .hero-btn:hover,
-    .nds-whatsapp-box-btn:hover {
+    .hero-btn:hover {
       background: linear-gradient(135deg, #16a34a, #15803d) !important;
       transform: translateY(-2px);
       box-shadow: 0 6px 22px rgba(34, 197, 94, 0.7) !important;
     }
 
-    /* Contact Section Layout */
+    /* Main Contact Section (Original Layout Preserved) */
     .wrap {
       max-width: 1140px;
       margin: 0 auto;
@@ -105,55 +103,70 @@
       align-items: start;
     }
 
-    .contact-card {
-      background: #f8fafc;
+    /* Left Info Cards with Blue Left Border */
+    .info-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-left: 4px solid #0284c7;
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+    }
+
+    .info-card h3 {
+      margin: 0 0 8px 0;
+      font-size: 1.15rem;
+      color: #0f172a;
+    }
+
+    .info-card p {
+      margin: 0 0 8px 0;
+      font-size: 0.95rem;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    .info-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-link {
+      display: block;
+      color: #0284c7;
+      font-weight: 700;
+      font-size: 0.98rem;
+      text-decoration: none;
+      margin-top: 6px;
+    }
+
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Right Form Card with Dark Navy Top Border */
+    .form-card {
+      background: #ffffff;
       border: 1px solid #e2e8f0;
       border-top: 4px solid #0B1320;
       border-radius: 14px;
-      padding: 26px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+      padding: 30px 28px;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
     }
 
-    .contact-card h3 {
-      margin: 0 0 10px 0;
-      font-size: 1.2rem;
-      color: #0B1320;
+    .form-card h3 {
+      margin: 0 0 8px 0;
+      font-size: 1.3rem;
+      color: #0f172a;
     }
 
-    .contact-card p {
-      margin: 0 0 14px 0;
+    .form-card > p {
+      margin: 0 0 20px 0;
       font-size: 0.95rem;
       color: #475569;
-      line-height: 1.65;
+      line-height: 1.6;
     }
 
-    .contact-btn-stack {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin-top: 12px;
-    }
-
-    .nds-call-box-btn {
-      display: inline-block !important;
-      background-color: #0B1320 !important;
-      color: #fbbf24 !important;
-      font-size: 15px !important;
-      font-weight: 700 !important;
-      padding: 12px 24px !important;
-      border-radius: 8px !important;
-      border: 1px solid #fbbf24 !important;
-      text-decoration: none !important;
-      text-align: center;
-      transition: transform 0.2s ease;
-    }
-
-    .nds-call-box-btn:hover {
-      transform: translateY(-1px);
-    }
-
-    /* Form Styling */
     .form-group {
       margin-bottom: 16px;
     }
@@ -161,7 +174,7 @@
     .form-group label {
       display: block;
       font-size: 0.9rem;
-      font-weight: 600;
+      font-weight: 700;
       color: #0f172a;
       margin-bottom: 6px;
     }
@@ -175,8 +188,12 @@
       border-radius: 8px;
       font-size: 0.95rem;
       font-family: inherit;
-      background: #ffffff;
+      background: #f1f5f9;
       color: #0f172a;
+    }
+
+    .form-group textarea {
+      background: #ffffff;
     }
 
     .form-group input:focus,
@@ -184,13 +201,31 @@
     .form-group textarea:focus {
       outline: none;
       border-color: #0284c7;
+      background: #ffffff;
+    }
+
+    .submit-whatsapp-btn {
+      width: 100%;
+      background-color: #22c55e;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 13px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .submit-whatsapp-btn:hover {
+      background-color: #16a34a;
     }
 
     /* Footer */
     .nds-footer {
       background-color: #0B1320;
       color: #f8fafc;
-      padding: 24px 20px 24px 20px;
+      padding: 24px 20px;
       border-top: 1px solid #1e293b;
     }
 
@@ -278,50 +313,54 @@
     </div>
   </header>
 
-  <!-- BIG HERO BANNER (Uses contact-banner.jpg + Visible Green WhatsApp Box) -->
+  <!-- BIG HERO BANNER -->
   <section class="hero-banner contact-banner">
     <div class="hero-wrap">
       <div class="eyebrow">NDS &bull; Kolkata &amp; Howrah &bull; Rapid Support</div>
       <h1>Contact NDS for Free Site Survey &amp; CCTV Quote</h1>
       <p>Speak directly with our CP Plus certified installation and AMC support team across Kolkata, Howrah &amp; West Bengal.</p>
       <a href="https://wa.me/917044009388" target="_blank" rel="noopener" class="hero-btn">
-        💬 Chat on WhatsApp: 7044009388
+        Chat on WhatsApp: 7044009388
       </a>
     </div>
   </section>
 
-  <!-- MAIN CONTENT -->
+  <!-- MAIN CONTENT (Exact Original Structure & Cards) -->
   <main class="wrap">
     <div class="section-tag">GET IN TOUCH</div>
     <h2>Book an Installation, Repair, or AMC Visit</h2>
 
     <div class="contact-grid">
-      <!-- Left Column: Direct Contact Cards -->
+      <!-- Left Column: All 4 Original Cards -->
       <div>
-        <div class="contact-card">
+        <div class="info-card">
           <h3>Direct Phone &amp; WhatsApp</h3>
           <p>Instant support for new camera quotes, urgent repairs, and site surveys:</p>
-          <div class="contact-btn-stack">
-            <a href="tel:+917044009388" class="nds-call-box-btn">
-              📞 Call Now: +91 70440 09388
-            </a>
-            <a href="https://wa.me/917044009388" target="_blank" rel="noopener" class="nds-whatsapp-box-btn" style="text-align:center;">
-              💬 Chat on WhatsApp: 7044009388
-            </a>
-          </div>
+          <a href="tel:+917044009388" class="contact-link">+91 70440 09388</a>
+          <a href="https://wa.me/917044009388" target="_blank" rel="noopener" class="contact-link">WhatsApp Chat: 7044009388</a>
         </div>
 
-        <div class="contact-card">
+        <div class="info-card">
           <h3>Kolkata Hub (Dumdum)</h3>
-          <p>
-            799/2 Sahid Hemanta Kr Bose Sarani, Dumdum,<br />
-            Kolkata, West Bengal
-          </p>
+          <p>799/2 Sahid Hemanta Kr Bose Sarani, Dumdum, Kolkata, West Bengal</p>
+          <p>Rapid dispatch across North &amp; South Kolkata, Salt Lake, Newtown, and North 24 Parganas.</p>
+        </div>
+
+        <div class="info-card">
+          <h3>Howrah Office (Bally)</h3>
+          <p>21/3, Dr. P.N. Ghosh Road, Bally, Howrah, West Bengal</p>
+          <p>Dedicated on-site support across Howrah City, Bally, Liluah, Belur, Dankuni, and Hooghly belt.</p>
+        </div>
+
+        <div class="info-card">
+          <h3>Working Hours</h3>
+          <p><strong>Monday &ndash; Saturday:</strong> 9:30 AM &ndash; 8:00 PM</p>
+          <p><strong>Sunday:</strong> Emergency &amp; Scheduled Project Support</p>
         </div>
       </div>
 
-      <!-- Right Column: WhatsApp Quote Request Form -->
-      <div class="contact-card" style="background:#ffffff;">
+      <!-- Right Column: Exact Original Callback / Quote Form -->
+      <div class="form-card">
         <h3>Request a Free Callback / Quote</h3>
         <p>Fill in your requirement below and send it straight to our technical team on WhatsApp.</p>
 
@@ -337,9 +376,15 @@
           </div>
 
           <div class="form-group">
-            <label for="cust-service">Service Needed</label>
+            <label for="cust-location">Area / Location (Kolkata / Howrah) *</label>
+            <input type="text" id="cust-location" placeholder="e.g. Dumdum, Bally, Salt Lake, Howrah" required />
+          </div>
+
+          <div class="form-group">
+            <label for="cust-service">Service Required</label>
             <select id="cust-service">
-              <option value="New CP Plus / IP CCTV Installation">New CP Plus / IP CCTV Installation</option>
+              <option value="New CP Plus CCTV Installation">New CP Plus CCTV Installation</option>
+              <option value="IP CCTV Camera Installation">IP CCTV Camera Installation</option>
               <option value="CCTV Repair / Troubleshooting">CCTV Repair / Troubleshooting</option>
               <option value="Annual Maintenance Contract (AMC)">Annual Maintenance Contract (AMC)</option>
               <option value="P2P Wireless / Networking Setup">P2P Wireless / Networking Setup</option>
@@ -347,12 +392,12 @@
           </div>
 
           <div class="form-group">
-            <label for="cust-msg">Location &amp; Requirement Details</label>
-            <textarea id="cust-msg" rows="3" placeholder="Area (e.g., Dumdum, Salt Lake, Howrah) and approx. number of cameras"></textarea>
+            <label for="cust-msg">Requirement Details (Optional)</label>
+            <textarea id="cust-msg" rows="3" placeholder="e.g. Need 4 outdoor cameras for home or 8 IP cameras for office"></textarea>
           </div>
 
-          <button type="submit" class="nds-whatsapp-box-btn" style="width:100%;cursor:pointer;text-align:center;">
-            💬 Send Quote Request on WhatsApp
+          <button type="submit" class="submit-whatsapp-btn">
+            Send Inquiry on WhatsApp
           </button>
         </form>
       </div>
@@ -386,14 +431,16 @@
       e.preventDefault();
       const name = document.getElementById("cust-name").value.trim();
       const phone = document.getElementById("cust-phone").value.trim();
+      const location = document.getElementById("cust-location").value.trim();
       const service = document.getElementById("cust-service").value;
       const msg = document.getElementById("cust-msg").value.trim();
 
       const text =
         "Hello NDS CCTV Team,%0A" +
         "*Name:* " + encodeURIComponent(name) + "%0A" +
-        "*Phone:* " + encodeURIComponent(phone) + "%0A" +
-        "*Service:* " + encodeURIComponent(service) + "%0A" +
+        "*Mobile:* " + encodeURIComponent(phone) + "%0A" +
+        "*Location:* " + encodeURIComponent(location) + "%0A" +
+        "*Service Required:* " + encodeURIComponent(service) + "%0A" +
         "*Details:* " + encodeURIComponent(msg);
 
       window.open("https://wa.me/917044009388?text=" + text, "_blank");
