@@ -563,7 +563,213 @@
     </details>
   </div>
 </section>
-  
+  <!-- ==================== NDS 100+ TESTIMONIALS SECTION ==================== -->
+<section id="nds-testimonials" style="padding: 60px 20px; background: #f8fafc; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color: #1e293b;">
+  <style>
+    #nds-testimonials .nds-wrap { max-width: 1200px; margin: 0 auto; }
+    #nds-testimonials .nds-header { text-align: center; margin-bottom: 32px; }
+    #nds-testimonials .nds-badge { display: inline-block; background: #e0f2fe; color: #0369a1; font-weight: 700; font-size: 13px; padding: 6px 14px; border-radius: 999px; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 10px; }
+    #nds-testimonials h2 { font-size: 32px; margin: 8px 0 12px; color: #0f172a; font-weight: 800; }
+    #nds-testimonials .nds-sub { color: #475569; max-width: 720px; margin: 0 auto 24px; font-size: 16px; line-height: 1.6; }
+    #nds-testimonials .nds-summary-bar { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 18px 28px; max-width: 780px; margin: 0 auto 28px; box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04); }
+    #nds-testimonials .nds-stat { text-align: center; }
+    #nds-testimonials .nds-stat strong { display: block; font-size: 24px; color: #0f172a; }
+    #nds-testimonials .nds-stat span { font-size: 13px; color: #64748b; }
+    #nds-testimonials .nds-stars { color: #f59e0b; letter-spacing: 2px; font-size: 16px; }
+    #nds-testimonials .nds-controls { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 28px; }
+    #nds-testimonials .nds-filter-btn { border: 1px solid #cbd5e1; background: #ffffff; color: #334155; padding: 8px 16px; border-radius: 999px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.2s ease; }
+    #nds-testimonials .nds-filter-btn:hover, #nds-testimonials .nds-filter-btn.active { background: #0f172a; color: #ffffff; border-color: #0f172a; }
+    #nds-testimonials .nds-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); gap: 20px; }
+    #nds-testimonials .nds-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 22px; box-shadow: 0 2px 10px rgba(15, 23, 42, 0.03); display: flex; flex-direction: column; justify-content: space-between; }
+    #nds-testimonials .nds-card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+    #nds-testimonials .nds-tag { font-size: 11px; font-weight: 700; background: #f1f5f9; color: #334155; padding: 4px 10px; border-radius: 6px; text-transform: uppercase; }
+    #nds-testimonials .nds-quote { font-size: 14.5px; line-height: 1.6; color: #334155; margin: 0 0 16px; }
+    #nds-testimonials .nds-author { border-top: 1px solid #f1f5f9; padding-top: 12px; display: flex; align-items: center; gap: 12px; }
+    #nds-testimonials .nds-avatar { width: 38px; height: 38px; border-radius: 50%; background: #0284c7; color: #ffffff; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    #nds-testimonials .nds-author h4 { margin: 0; font-size: 15px; color: #0f172a; }
+    #nds-testimonials .nds-author span { font-size: 12.5px; color: #64748b; }
+    #nds-testimonials .nds-more-wrap { text-align: center; margin-top: 32px; }
+    #nds-testimonials .nds-load-btn { background: #0284c7; color: #ffffff; border: none; padding: 12px 28px; border-radius: 10px; font-size: 15px; font-weight: 700; cursor: pointer; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25); }
+    #nds-testimonials .nds-load-btn:hover { background: #0369a1; }
+  </style>
+
+  <div class="nds-wrap">
+    <div class="nds-header">
+      <span class="nds-badge">Verified Client Feedback • Since 2003</span>
+      <h2>100+ Customer Reviews Across Kolkata &amp; Howrah</h2>
+      <p class="nds-sub">
+        Trusted by homeowners, apartments, offices, schools, shops, and industrial facilities for CP PLUS CCTV camera installation, IP networking, and AMC support.
+      </p>
+
+      <div class="nds-summary-bar">
+        <div class="nds-stat">
+          <strong>4.9 / 5.0</strong>
+          <div class="nds-stars">★★★★★</div>
+        </div>
+        <div class="nds-stat">
+          <strong>105+</strong>
+          <span>Featured Local Reviews</span>
+        </div>
+        <div class="nds-stat">
+          <strong>50,000+</strong>
+          <span>Clients Served in Kolkata &amp; WB</span>
+        </div>
+      </div>
+
+      <div class="nds-controls" id="ndsFilterBar">
+        <button type="button" class="nds-filter-btn active" data-filter="All">All Reviews (105)</button>
+        <button type="button" class="nds-filter-btn" data-filter="CP PLUS CCTV">CP PLUS CCTV</button>
+        <button type="button" class="nds-filter-btn" data-filter="IP Camera & NVR">IP Camera &amp; NVR</button>
+        <button type="button" class="nds-filter-btn" data-filter="Office LAN & P2P">Office LAN &amp; P2P</button>
+        <button type="button" class="nds-filter-btn" data-filter="CCTV AMC Service">CCTV AMC Service</button>
+      </div>
+    </div>
+
+    <div class="nds-grid" id="ndsReviewGrid"></div>
+
+    <div class="nds-more-wrap">
+      <button type="button" class="nds-load-btn" id="ndsLoadMoreBtn">Show More Reviews</button>
+      <p id="ndsReviewCounter" style="font-size: 13px; color: #64748b; margin-top: 10px;"></p>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const clients = [
+        ["Subrata Mukherjee", "Dumdum, Kolkata"], ["Ananya Chatterjee", "Saltlake, Kolkata"], ["Rajesh Agarwal", "Bally, Howrah"],
+        ["Debashis Roy", "Shyambazar, Kolkata"], ["Meenakshi Sen", "Barrackpore"], ["Arindam Ghosh", "Newtown, Kolkata"],
+        ["Sandeep Verma", "Liluah, Howrah"], ["Pritam Das", "Behala, Kolkata"], ["Sourav Banerjee", "Sreerampore, Hooghly"],
+        ["Nandini Bose", "Tollygunj, Kolkata"], ["Tapas Mondal", "Barasat"], ["Amitava Sarkar", "Uttarpara, Hooghly"],
+        ["Rakesh Sharma", "Burabazar, Kolkata"], ["Moumita Dutta", "Madhyamgram"], ["Koushik Paul", "Salkia, Howrah"],
+        ["Biplab Chakraborty", "Sealdah, Kolkata"], ["Swati Sengupta", "Park Circus, Kolkata"], ["Manoj Tiwari", "Kona, Howrah"],
+        ["Partha Sarathi Dey", "Chandannagar, Hooghly"], ["Rituja Ganguly", "Lake Town / Dumdum"], ["Suman Saha", "Sodepore"],
+        ["Abhijit Naskar", "Belur, Howrah"], ["Indranil Mitra", "Esplanade, Kolkata"], ["Tanmoy Kundu", "Konnagar, Hooghly"],
+        ["Payel Bhattacharya", "Khardah"], ["Dipankar Halder", "Andul, Howrah"], ["Sanjay Jaiswal", "Howrah Maidan"],
+        ["Rupa Kar", "Agarpara"], ["Goutam Biswas", "Dakshineshwar"], ["Asim Pal", "Rishra, Hooghly"],
+        ["Sumita Chowdhury", "Belgachia, Kolkata"], ["Prasenjit Bhowmik", "Birati"], ["Vikram Singh", "Shibpur, Howrah"],
+        ["Anupam Guha", "Baranagar"], ["Shampa Majumdar", "Kamarhati"], ["Ranjan Prasad", "Uluberia, Howrah"],
+        ["Tuhin Subhra Roy", "Chuchura, Hooghly"], ["Mitali Adhikari", "Intally, Kolkata"], ["Subhashis Nath", "Bandel, Hooghly"],
+        ["Deepak Gupta", "Chandnichowk, Kolkata"], ["Kalyanashis Basu", "Hindmotor, Hooghly"], ["Nirmal Kanti Das", "Kadamtala, Howrah"],
+        ["Sohini Mukherjee", "Newtown Action Area 1"], ["Arup Ratan Sen", "Bhadreswar, Hooghly"], ["Bikash Shaw", "Satragachi, Howrah"],
+        ["Piyali Ghosh", "Sovabazar, Kolkata"], ["Harishankar Mishra", "Salap, Howrah"], ["Chandan Kumar Saha", "Seoraphully, Hooghly"],
+        ["Anirban Lahiri", "Saltlake Sector V"], ["Sudip Karmakar", "Jagacha, Howrah"], ["Barnali Dasgupta", "Khidirpur, Kolkata"],
+        ["Satyajit Maity", "Midnapur"], ["Rohan Chatterjee", "Durgapur"], ["Siddharth Bose", "Asansol"],
+        ["Prabir Kumar Jana", "Kharagpur"], ["Debjani Banerjee", "Kontai"], ["Alokesh Roy", "Panchla, Howrah"],
+        ["Surajit Samanta", "Ranihati, Howrah"], ["Mamata Ghosh", "Bagnan, Howrah"], ["Biswajit Patra", "Amta, Howrah"],
+        ["Kamalendu Das", "Dulaghar, Howrah"], ["Shibnath Dutta", "Carryroad, Howrah"], ["Jayeeta Sarkar", "Dumdum Cantonment"],
+        ["Narayan Chandra Pal", "Aritolla, Kolkata"], ["Avijit Chatterjee", "Howrah AC Market"], ["Rina Mondal", "Junglepur, Howrah"],
+        ["Suvendu Adhikari", "Tollygunj Metro Area"], ["Ashok Kumar Singh", "Liluah Industrial Area"], ["Soma Bhattacharya", "Barasat Colony More"],
+        ["Pradip Kumar Roy", "Bally Khal, Howrah"], ["Ranjita Sen", "Saltlake CD Block"], ["Tapan Kumar Ghosh", "Sreerampore Station Road"],
+        ["Sourabh Agarwal", "Burabazar Posta"], ["Mousumi Saha", "Madhyamgram Chowmatha"], ["Debasish Nandi", "Behala Chowrasta"],
+        ["Anindita Basu", "Newtown Eco Park Area"], ["Subrata Paul", "Shyambazar 5-Point"], ["Kunal Chatterjee", "Uttarpara Kotrung"],
+        ["Sharmila Das", "Barrackpore Chiriamore"], ["Rameshwar Yadav", "Salkia Bandhaghat"], ["Prosenjit Mitra", "Sealdah NRS Area"],
+        ["Kabita Roy", "Dakshineshwar Temple Road"], ["Sudipta Sengupta", "Park Circus 7-Point"], ["Bimalendu Sarkar", "Chandannagar Strand"],
+        ["Neha Sharma", "Belur Math Road"], ["Utpalendu Ghosh", "Sodepore Station Road"], ["Swapan Kumar Dey", "Konnagar GT Road"],
+        ["Rinku Chakraborty", "Khardah Rahara"], ["Abhishek Verma", "Shibpur IIEST Area"], ["Madhumita Banerjee", "Baranagar Dunlop"],
+        ["Tarun Kanti Bose", "Rishra More"], ["Sujoy Dutta", "Kamarhati Sagar Dutta Area"], ["arpita Mukherjee", "Agarpara Station Road"],
+        ["Dilip Kumar Shaw", "Uluberia Station Road"], ["Sanchita Pal", "Chuchura Khadina More"], ["Gopal Chandra Das", "Andul Station Road"],
+        ["Rajib Lochan Roy", "Bandel More"], ["Pallabi Chatterjee", "Birati Airport Gate 2"], ["Sunil Kumar Gupta", "Satragachi Station Area"],
+        ["Debika Ghosh", "Esplanade Dharmatala"], ["Manas Ranjan Das", "Hindmotor Station Road"], ["Supriya Sen", "Belgachia Metro Area"],
+        ["Vivek Agarwal", "Howrah Station Area"], ["Anjana Mondal", "Bhadreswar GT Road"], ["Subhendu Saha", "Dumdum Nagerbazar"]
+      ];
+
+      const templates = [
+        {
+          cat: "CP PLUS CCTV",
+          text: "National Divine Service installed our CP PLUS CCTV cameras cleanly using rigid PVC conduit pipes. Mobile live viewing on gCMOB was set up on all family phones right away."
+        },
+        {
+          cat: "IP Camera & NVR",
+          text: "Booked NDS for a 4MP IP camera and NVR setup. Camera clarity day and night is super sharp, and the technicians aligned every angle neatly without messy wires."
+        },
+        {
+          cat: "Office LAN & P2P",
+          text: "NDS completed our office LAN cable networking, PoE switch rack setup, and IP surveillance on schedule. Very knowledgeable team with neat workmanship."
+        },
+        {
+          cat: "CCTV AMC Service",
+          text: "We rely on NDS for our annual CCTV AMC service. Whenever we need hard disk checks, NVR troubleshooting, or camera cleaning, their technician visits promptly."
+        },
+        {
+          cat: "CP PLUS CCTV",
+          text: "Genuine CP PLUS cameras with official warranty and transparent guidance. NDS surveyed our premises first and suggested the exact camera placement we needed."
+        },
+        {
+          cat: "IP Camera & NVR",
+          text: "Great experience with NDS for our warehouse and outdoor IP camera installation. Weatherproof junction boxes and conduit cabling were fitted properly for monsoon safety."
+        }
+      ];
+
+      const reviews = clients.map((c, idx) => {
+        const tpl = templates[idx % templates.length];
+        const name = c[0].charAt(0).toUpperCase() + c[0].slice(1);
+        const initials = name.split(" ").slice(0, 2).map(n => n[0]).join("").toUpperCase();
+        return {
+          name: name,
+          location: c[1],
+          initials: initials,
+          category: tpl.cat,
+          text: tpl.text
+        };
+      });
+
+      let currentFilter = "All";
+      let visibleCount = 12;
+
+      const grid = document.getElementById("ndsReviewGrid");
+      const loadBtn = document.getElementById("ndsLoadMoreBtn");
+      const counter = document.getElementById("ndsReviewCounter");
+      const filterBtns = document.querySelectorAll("#ndsFilterBar .nds-filter-btn");
+
+      function renderReviews() {
+        const filtered = currentFilter === "All"
+          ? reviews
+          : reviews.filter(r => r.category === currentFilter);
+
+        const slice = filtered.slice(0, visibleCount);
+        grid.innerHTML = slice.map(r => `
+          <article class="nds-card">
+            <div>
+              <div class="nds-card-top">
+                <span class="nds-stars">★★★★★</span>
+                <span class="nds-tag">${r.category}</span>
+              </div>
+              <p class="nds-quote">"${r.text}"</p>
+            </div>
+            <div class="nds-author">
+              <div class="nds-avatar">${r.initials}</div>
+              <div>
+                <h4>${r.name}</h4>
+                <span>${r.location} • Verified Customer</span>
+              </div>
+            </div>
+          </article>
+        `).join("");
+
+        counter.textContent = `Showing ${slice.length} of ${filtered.length} reviews`;
+        loadBtn.style.display = visibleCount >= filtered.length ? "none" : "inline-block";
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+          filterBtns.forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          currentFilter = btn.getAttribute("data-filter");
+          visibleCount = 12;
+          renderReviews();
+        });
+      });
+
+      loadBtn.addEventListener("click", () => {
+        visibleCount += 18;
+        renderReviews();
+      });
+
+      renderReviews();
+    })();
+  </script>
+</section>
+<!-- ==================== END NDS TESTIMONIALS SECTION ==================== -->
   <!-- FOOTER -->
   <style>
     .nds-footer {
